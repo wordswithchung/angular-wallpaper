@@ -28,7 +28,13 @@ export class WallpaperListComponent {
     let paper:Wallpaper;
 
     for (let i = 1; i < this.size; i++){
-      index = "00" + i;
+      if (i <= 9){
+        index = "00" + i;
+      } else if (i <= 99) {
+        index = "0" + i;
+      } else {
+        index = "" + i;
+      }
       paper = this.wallpaperService.getWallpaper(index);
       this.wallpapers.push(paper);
     }

@@ -18,8 +18,8 @@ export class WallpaperService {
   getWallpaper(index){
     this.wallpaper = {
       index: index,
-      mockLocation: './assets/mocks/' + index + '.jpg',
-      originalLocation: './assets/originals/' + index + '.jpg',
+      mockLocation: './assets/mocks/' + index + '.JPG',
+      originalLocation: './assets/originals/' + index + '.JPG',
       metadata: this.getMetadataInfo(index)
     }
     return this.wallpaper;
