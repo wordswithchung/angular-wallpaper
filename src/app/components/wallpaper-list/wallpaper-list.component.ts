@@ -19,7 +19,7 @@ export class WallpaperListComponent {
 
   constructor(private metadataService:MetadataService,
   private wallpaperService:WallpaperService) {
-    this.size = this.metadataService.metadata.length + 1;
+    this.size = this.metadataService.metadata.length;
     this.getWallpaper();
    }
 
@@ -27,7 +27,7 @@ export class WallpaperListComponent {
     let index:string;
     let paper:Wallpaper;
 
-    for (let i = 1; i < this.size; i++){
+    for (let i = this.size; i > 0; i--){
       if (i <= 9){
         index = "00" + i;
       } else if (i <= 99) {

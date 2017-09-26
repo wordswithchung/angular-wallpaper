@@ -1,7 +1,6 @@
-<div class="card">
-  <a href="{{ wallpaper.originalLocation }}" download><img class="card-img-top" src="{{ wallpaper.mockLocation }}" width="300px"></a>
-  <div class="card-block">
-    <h4 class="card-title">{{ wallpaper.metadata.name }}</h4>
-    <p class="card-subtitle"><a href="{{ wallpaper.metadata.link }}" target="_blank">{{ wallpaper.metadata.attribution }}</a></p>
-</div>
+<div class="card" align="center">
+    <img class="card-img-top" src="{{ wallpaper.metadata.mockLocation }}" width="300px">
+    <h4 align="center" class="card-title">{{ wallpaper.metadata.name }}</h4>
+    <a href="{{ wallpaper.metadata.originalLocation }}" download><button align="center" type="button" class="btn btn-outline-info">Download Image</button></a>
+    <small align="center" class="text-muted"><a href="{{ wallpaper.metadata.link }}" target="_blank">{{ wallpaper.metadata.attribution }}</a></small>
 </div>

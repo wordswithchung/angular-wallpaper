@@ -13,8 +13,11 @@ import { Wallpaper } from '../../models/Wallpaper';
 })
 export class WallpaperComponent implements OnInit {
   @Input('wallpaper') wallpaper:Wallpaper;
+  private view:boolean;
 
-  constructor(private metadataService:MetadataService) {
+  constructor(private metadataService:MetadataService,
+  private wallpaperService:WallpaperService) {
+    this.view = false;
    }
 
   ngOnInit() {

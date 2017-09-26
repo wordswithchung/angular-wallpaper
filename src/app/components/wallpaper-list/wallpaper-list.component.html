@@ -1,5 +1,9 @@
 <div class="container">
   <div class="row">
-    <app-wallpaper *ngFor="let wallpaper of wallpapers" [wallpaper]="wallpaper"></app-wallpaper>  
+      <div *ngFor="let wallpaper of wallpapers" class="card-deck">
+      
+      <app-wallpaper [wallpaper]="wallpaper"></app-wallpaper>  
+      
+    </div>
   </div>
 </div>
