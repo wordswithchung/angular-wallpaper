@@ -4,4 +4,5 @@
 
 .card {
     border: none;
+    box-shadow: 5px 5px 5px #D3D3D3;
 }
