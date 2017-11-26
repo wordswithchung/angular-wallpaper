@@ -2,5 +2,8 @@
     <img class="card-img-top" src="{{ wallpaper.metadata.mockLocation }}" width="300px">
     <h4 align="center" class="card-title">{{ wallpaper.metadata.name }}</h4>
     <a href="{{ wallpaper.metadata.originalLocation }}" download><button align="center" type="button" class="btn btn-outline-info">Download Image</button></a>
-    <small align="center" class="text-muted"><a href="{{ wallpaper.metadata.link }}" target="_blank">{{ wallpaper.metadata.attribution }}</a></small>
+
+    <small *ngIf="wallpaper.metadata.attribution; else blank" align="center" class="text-muted"><a href="{{ wallpaper.metadata.link }}" target="_blank">{{ wallpaper.metadata.attribution }}</a></small>
+    <ng-template #blank><small>Background by Chung Nguyen </small></ng-template>
+    
 </div>
