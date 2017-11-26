@@ -1,3 +1,7 @@
 .wallpaper {
     align-content: center;
 }
+
+.card {
+    border: none;
+}

@@ -1,7 +1,7 @@
-<div class="container wallpaper-list">
-  <div class="row">
-      <div *ngFor="let wallpaper of wallpapers" class="card-deck">
-        <app-wallpaper [wallpaper]="wallpaper"></app-wallpaper>
+<div class="container-fluid wallpaper-list">
+  <div class="row justify-content-center">
+      <div *ngFor="let wallpaper of wallpapers">
+        <app-wallpaper class="card-deck col" [wallpaper]="wallpaper"></app-wallpaper>
     </div>
   </div>
 </div>

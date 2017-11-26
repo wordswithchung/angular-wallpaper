@@ -1,3 +1,7 @@
 .top-nav {
     background-image: url("../../../assets/regal.png");
 }
+
+.jumbotron {
+    padding-bottom: 0px;
+}
