@@ -16,8 +16,8 @@ export class MetadataService {
       name: lines[1],
       attribution: lines[2],
       link: lines[3],
-      mockLocation: '/assets/' + lines[4],
-      originalLocation: '/assets/' + lines[5]
+      mockLocation: '../assets/' + lines[4],
+      originalLocation: '../assets/' + lines[5]
     }
     return this.metadatum;
   }
